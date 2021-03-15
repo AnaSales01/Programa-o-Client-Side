@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	
+	<head>
+		<title>Cadastro de Gestão Acadêmica</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		<h2>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h2>
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<form action="cadastro.php" method="post" name="cadastro">
+						<table>
+							<tr>
+								<td><label for="login">Login:</label></td>
+								<td><input type="text" name="login" id="login" size="30" maxlength="30"></td>
+							</tr>
+							<tr>
+								<td><label for="senha">Senha:</label></td>
+								<td><input type="password" name="senha" id="senha" size="30" maxlength="30"></td>
+							</tr>
+							<tr>
+								<td><label for="status">Status:</label></td>
+								<td>
+									<select>
+										<optgroup>
+											<option value="selected">Inativo</option>
+											<option value="nativo">Nativo</option>
+										</optgroup>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="tipo">Tipo:</label></td>
+								
+								<td>
+									<input type="radio" name="tipo" id="tecnico">
+									<label for="tecnico">Técnico</label>
+									
+									<input type="radio" name="tipo" id="professor">
+									<label for="professor">Professor</label>
+									
+									<input type="radio" name="tipo" id="aluno">
+									<label for="aluno">Aluno</label>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="data">Data de Criação:</label></td>
+								<td><input type="date" name="data" id="data"></td>
+							</tr>
+							<tr>
+								<td><label for="perfil">Perfil:</label></td>
+								
+								<td>
+									<input type="radio" name="perfil" id="convidado">
+									<label for="convidado">Convidado</label>
+									
+									<input type="radio" name="perfil" id="administrador">
+									<label for="administrador">Administrador</label>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="observacoes">Observações:</label></td>
+								<td><textarea name="observacoes" cols="30" rows="5"></textarea></td>
+							</tr>
+							
+							<tr>
+							<td><label for="modulo">Módulo:</label></td>
+							<td>
+								<input type="checkbox" name="compras" id="compras" value="compras">
+								<label for="compras">Compras</label>
+								<input type="checkbox" name="biblioteca" id="biblioteca" value="biblioteca">
+								<label for="biblioteca">Biblioteca</label>
+								<input type="checkbox" name="academico" id="academico" value="academico">
+								<label for="academico">Acadêmico</label>
+								<input type="checkbox" name="documentacao" id="documentacao" value="documentacao">
+								<label for="documentacao">Documentação</label>
+								<input type="checkbox" name="recursos humanos" id="recursos humanos" value="recursos humanos">
+								<label for="recursos humanos">Recursos Humanos</label>
+							</td>
+							</tr>
+							
+							<tr>
+								<td colspan="2">
+                                    <input type="submit" value="Enviar" id="enviar" name="Cadastrar"/>
+                                    <input type="reset" value="Limpar" id="limpar" name="Excluir"/>
+								</td>
+							</tr>
+						</table>
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+
+</html>

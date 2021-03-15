@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	
+	<head>
+		<title>Academia</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		<h2>Academia</h2>
+		
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<fieldset>
+							<legend>Cadastro Geral</legend>
+								<form action="cadastro.php" method="post" name="cadastro">
+									<table colspan="2">
+											<tr>
+												<td><label for="nome">Nome Completo:</label></td>
+												<td><input type="text" name="nome" id="nome" size="30" maxlength="30"></td>
+												<td><label for="profissao">Profissão:</label></td>
+												<td>	
+													<select name="profissao" id="profissao">
+														<option selected>Sua Profissão</option>
+														<optgroup>
+															<option value="desenvolvedor">Desenvolvedor</option>
+															<option value="medico">Médico</option>
+															<option value="advogado">Advogado</option>
+															<option value="engenheiro">Engenheiro</option>
+															<option value="professor">Professor</option>
+															<option value="vendedor">Vendedor</option>
+														</optgroup>
+													</select>
+												</td>
+											</tr>
+											
+											<tr>
+												<td><label for="email">E-mail:</label></td>
+												<td><input type="email" name="email" id="email" size="30" maxlength="30"></td>
+												<td><label for="rua">Rua:</label></td>
+												<td><input type="text" name="rua" id="rua" size="30" maxlength="30"></td>
+											</tr>
+												
+											<tr>
+												<td><label for="status">Status:</label></td>
+												<td>
+													<input type="radio" name="status" id="ate 20">
+													<label for="ate 20">até 20 anos</label>
+													
+													<input type="radio" name="status" id="mais 20 ate 30">
+													<label for="mais 20 ate 30">mais de 20 até 30 anos</label>
+													
+													<input type="radio" name="status" id="mais 30 ate 40">
+													<label for="mais 30 ate 40">mais de 30 até 40 anos</label>
+													
+													<input type="radio" name="status" id="mais 40 ate 50">
+													<label for="mais 40 ate 50">mais de 40 até 50 anos</label>
+													
+													<input type="radio" name="status" id="mais 50 ate 60">
+													<label for="mais 50 ate 60">mais de 50 até 60 anos</label>
+													
+													<input type="radio" name="status" id="mais 60">
+													<label for="mais 60">mais de 60</label>
+												</td>
+											</tr>
+										
+											<tr>
+												<td>
+													<input type="checkbox" name="futebol de campo" id="futebol de campo" value="futebol de campo">
+													<label for="futebol de campo">Futebol de campo</label>
+													
+													<input type="checkbox" name="futebol de salao" id="futebol de salao" value="futebol de salao">
+													<label for="futebol de salao">Futebol de salão</label>
+													
+													<input type="checkbox" name="futebol society" id="futebol society" value="futebol society">
+													<label for="futebol society">Futebol society</label>
+													
+													<input type="checkbox" name="volley de quadra" id="volley de quadra" value="volley de quadra">
+													<label for="volley de quadra">Volley de quadra</label>
+													
+													<input type="checkbox" name="volley de praia" id="volley de praia" value="volley de praia">
+													<label for="volley de praia">Volley de praia</label>
+													
+													<input type="checkbox" name="natacao em piscina" id="natacao em piscina" value="natacao em piscina">
+													<label for="natacao em piscina">Natação em piscina</label>
+													
+													<input type="checkbox" name="natacao em mar aberto" id="natacao em mar aberto" value="natacao em mar aberto">
+													<label for="natacao em mar aberto">Natação em mar aberto</label>
+												</td>
+											</tr>
+										
+											<tr>
+												<td><label for="mensagem">Mensagem:</label></td>
+												<td><textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea></td>
+											</tr>
+											
+											<tr>
+												<td colspan="2">
+													<input type="submit" value="Enviar" id="enviar" name="Enviar"/>
+													<input type="reset" value="Limpar" id="limpar" name="Limpar"/>
+												</td>
+											</tr>
+									</table>
+								</form>
+						</fieldset>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+
+</html>

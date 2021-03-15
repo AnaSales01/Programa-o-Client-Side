@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	
+	<head>
+		<title>Diverso</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		<h2>Diverso</h2>
+		
+		<table>
+        <tbody>
+            <tr>
+                <td>
+                       <form action="cadastro.php" method="post" name="cadastro" autocomplete="on">
+                            <table>
+                                <tr>
+                                    <td><label for="nome">Nome:</label></td>
+                                    <td><input type="text" name="nome" id="nome" size="40" maxlength="30"/></td>
+                                </tr>
+								
+								<tr>
+                                    <td><label for="nome completo">Nome Completo:</label></td>
+                                    <td><input type="text" name="nome completo" id="nome completo" size="40" maxlength="30"/></td>
+                                </tr>
+                               
+							   <tr>
+                                    <td><label for="cpf">CPF:</label></td>
+                                    <td><input type="text" name="cpf" id="cpf" size="40" maxlength="30"/></td>
+                                </tr>
+							   
+							   <tr>
+                                    <td><label for="email">E-mail:</label></td>
+                                    <td><input type="email" name="email" id="email" size="40" maxlength="30"/></td>
+                                </tr>
+								
+								<tr>
+                                    <td><label for="website">WebSite:</label></td>
+                                    <td><input type="text" name="website" id="website" size="40" maxlength="15"/></td>
+                                </tr>
+                                
+								<tr>
+                                    <td><label for="endereco">Endereço:</label></td>
+                                    <td><input type="text" name="endereco" id="endereco" size="40" maxlength="15"/></td>
+                                </tr>
+                                
+								<tr>
+                                    <td><label for="bairro">Bairro:</label></td>
+                                    <td><input type="text" name="bairro" id="bairro" size="40" maxlength="15"/></td>
+                                </tr>
+                                
+								<tr>
+                                    <td><label for="cidade">Cidade:</label></td>
+                                    <td><input type="text" name="cidade" id="cidade" size="40" maxlength="15"/></td>
+                                </tr>
+                                
+								<tr>
+                                    <td><label for="uf">UF:</label></td>
+                                    <td>
+                                        <select name="uf" id="uf">
+                                            <optgroup>
+                                                <option value="ac">AC</option>
+                                                <option value="al">AL</option>
+                                                <option value="am">AM</option>
+                                                <option value="ap">AP</option>
+                                                <option value="ba" selected>BA</option>
+                                                <option value="ce">CE</option>
+                                                <option value="df">DF</option>
+                                                <option value="es">ES</option>
+                                                <option value="go">GO</option>
+                                                <option value="ma">MA</option>
+                                                <option value="mg">MG</option>
+                                                <option value="mt">MT</option>
+                                                <option value="ms">MS</option>
+                                                <option value="pa">PA</option>
+                                                <option value="pb">PB</option>
+                                                <option value="pe">PE</option>
+                                                <option value="pi">PI</option>
+                                                <option value="pr">PR</option>
+                                                <option value="rj">RJ</option>
+                                                <option value="rn">RN</option>
+                                                <option value="ro">RO</option>
+                                                <option value="rr">RR</option>
+                                                <option value="rs">RS</option>
+                                                <option value="sc">SC</option>
+                                                <option value="se">SE</option>
+                                                <option value="sp">SP</option>
+												<option value="to">TO></option>
+                                            </optgroup>
+                                        </select>
+                                    </td>
+                                </tr>
+								
+								<tr>
+                                    <td><label for="cep">CEP:</label></td>
+                                    <td><input type="text" name="cep" id="cep" size="40" maxlength="15"/></td>
+                                </tr>
+                                
+								<tr>
+                                    <td><label for="telefone">Telefone:</label></td>
+                                    <td><input type="text" name="telefone" id="telefone" size="40" maxlength="15"/></td>
+                                </tr>
+								<tr>
+                                    <td><label for="fax">FAX:</label></td>
+                                    <td><input type="text" name="fax" id="fax" size="40" maxlength="15"/></td>
+                                </tr>
+								
+								 <tr>
+                                    <td><label for="nascimento">Data de Nascimento:</label></td>
+                                    <td><input type="date" name="nascimento" id="nascimento"/></td>
+                                </tr>
+								
+								<tr>
+                                    <td><label for="sexo">Sexo:</label></td>
+                                    <td>
+                                        <input type="radio" name="sexo" id="m" value="m"/>
+                                        <label for="m">M</label>
+                                        <input type="radio" name="sexo" id="f" value="f"/>
+                                        <label for="f">F</label>
+                                    </td>
+                                </tr>
+								
+								<tr>
+                                    <td><label for="celular">Celular:</label></td>
+                                    <td><input type="text" name="celular" id="celular" size="40" maxlength="15"/></td>
+                                </tr>
+								
+								<tr>
+                                    <td><label for="estado civil">Estado Civil:</label></td>
+                                    <td>
+                                        <select name="estado civil" id="estado civil">
+                                            <optgroup>
+                                                <option value="solteiro" selected>Solteiro</option>
+                                                <option value="casado">Casado</option>
+                                                <option value="viuvo">Viúvo(a)</option>
+                                                <option value="companheiro">Companheiro(a)</option>
+                                            </optgroup>
+                                        </select>
+                                    </td>
+                                </tr>
+								
+								<tr>
+									<td><label for="login">Login:</label></td>
+									<td><input type="text" name="login" id="login" size="30" maxlength="40"></td>
+								</tr>
+								
+								<tr>
+                                    <td><label for="senha">Senha:</label></td>
+                                    <td><input type="password" name="senha" id="senha" size="40" maxlength="40"/></td>
+                                </tr>
+                               
+								<tr>
+									<p>Deseja receber informações sobre os seguintes assuntos abaixo:</p>
+                                    <td>
+                                        <input type="checkbox" name="tecnologia" id="tecnologia" value="tecnologia"/>
+                                        <label for="tecnologia">Tecnologia</label>
+                                        <br>
+                                        <input type="checkbox" name="esportes" id="esportes" value="esportes"/>
+                                        <label for="esportes">Esportes</label>
+                                        <br>
+                                        <input type="checkbox" name="automoveis" id="automoveis" value="automoveis"/>
+                                        <label for="automoveis">Automóveis</label>
+                                        <br>
+                                        <input type="checkbox" name="culinaria" id="culinaria" value="culinaria"/>
+                                        <label for="culinaria">Culinária</label>
+                                        <br>
+                                        <input type="checkbox" name="politica" id="politica" value="politica"/>
+                                        <label for="politica">Política</label>
+                                        <br>
+                                        <input type="checkbox" name="policial" id="policial" value="policial"/>
+                                        <label for="policial">Policial</label>
+                                        <br>
+                                        <input type="checkbox" name="tempo" id="tempo" value="tempo"/>
+                                        <label for="tempo">Tempo</label>
+                                        <br>
+                                        <input type="checkbox" name="cultura" id="cultura" value="cultura"/>
+                                        <label for="cultura">Cultura</label>
+										<br>
+										<input type="checkbox" name="economia" id="economia" value="economia"/>
+                                        <label for="economia">Economia</label>
+                                        <br>
+                                        <input type="checkbox" name="jogos" id="jogos" value="jogos"/>
+                                        <label for="jogos">Jogos</label>
+                                        <br>
+                                        <input type="checkbox" name="educacao" id="educacao" value="educacao"/>
+                                        <label for="educacao">Educação</label>
+                                        <br>
+                                        <input type="checkbox" name="viagem" id="viagem" value="viagem"/>
+                                        <label for="viagem">Viagem</label>
+                                        <br>
+                                        <input type="checkbox" name="empregos" id="empregos" value="empregos"/>
+                                        <label for="empregos">Empregos</label>
+                                        <br>
+                                        <input type="checkbox" name="moda e estilo" id="moda e estilo" value="moda e estilo"/>
+                                        <label for="moda e estilo">Moda e Estilo</label>
+                                        <br>
+                                        <input type="checkbox" name="autorizacao" id="autorizacao" value="autorizacao"/>
+                                        <label for="autorizacao">Li as regras de cadastro e autorizo a criação do usuário</label>
+                                    </td>
+                                </tr>
+                               
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="submit" value="Enviar" id="enviar" name="Confirmar"/>
+                                        <input type="reset" value="Limpar" id="limpar" name="Retornar"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+	</body>
+
+</html>

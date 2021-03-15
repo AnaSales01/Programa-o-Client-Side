@@ -1,0 +1,118 @@
+*{box-sizing:border-box;
+	}
+	
+body{
+	background-color:#b9eda3;
+}
+
+.geral{
+	
+}
+
+.menu1{
+	background-color:#008037;
+	padding:15px;
+	font-size:25px;
+}
+
+ul{
+	text-align:center;
+	margin:15px;
+}
+li{
+	display:inline;
+}
+a {
+	text-decoration:none;
+	border-radius:40px;
+	padding:10px 20px;
+	color:white;
+}
+
+.cabecalho{
+	padding-top:20px;
+	padding-bottom:20px;
+	margin-top:20px;
+}
+
+.menu2{
+	background-color:#7ed957;
+	padding:15px;
+	font-size:25px;
+}
+
+.conteudo{
+	font-size:30px;
+	font-family:Yeseva One;
+	padding-top:10px;
+	font-weight:bold;
+	text-align:center;
+}
+
+.foto1{
+	background-color:#7ed957;
+	border-radius:10px;
+	width:270px;
+	height:300px;
+	margin-left:20px;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-top:80px;
+	padding-bottom:150px;
+	display:inline-block;
+}
+
+.foto2{
+	background-color:#7ed957;
+	border-radius:10px;
+	width:270px;
+	height:300px;
+	margin-left:20px;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-top:80px;
+	padding-bottom:150px;
+	display:inline-block;
+}
+
+.foto3{
+	background-color:#7ed957;
+	border-radius:10px;
+	width:270px;
+	height:300px;
+	margin-left:20px;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-top:80px;
+	padding-bottom:150px;
+	display:inline-block;
+}
+
+
+h2{
+	color:#745151;
+	text-align:center;
+}
+
+
+.cadastro{
+	padding-top:10px;
+	padding-bottom:20px;
+	border-radius:50px;
+}
+input{
+	border-color:#7ed957;
+	font-family:stoke;
+	padding:10px;
+	box-shadow:2px 2px #7ed957;
+	
+}
+
+input [type="submit"]{
+	background-color:#7ed957;
+}
+.rodape{
+	background-color:#008037;
+	padding:15px;
+	clear:both;
+}
