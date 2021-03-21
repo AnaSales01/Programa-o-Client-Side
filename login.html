@@ -47,10 +47,36 @@
                     
                 </div>
 
-            <main class="home"> 
-                <img src="img/1.png" alt="Cremes skin care" class="pagi">
-                <buttom  type="buttom"><span></span><a href="produtos.html">Cuide-se</a></buttom>
+            <main class="login"> 
+                
+                <h1 class="titulo">Cadastro</h1>
+				
+                <form action="cadastro.php" method="post" name="cadastro" autocomplete="on">
+					
+                    <fieldset class="cadastro">
+						
+						<input type="text" name="nome" id="nome" size="40" maxlength="30" placeholder="Nome Completo"><br><br>
 
+						<input type="text" name="endereco" id="endereco" size="40" maxlength="15" placeholder="Endereço"><br><br>
+						
+						<input type="text" name="bairro" id="bairro" size="40" maxlength="15" placeholder="Bairro"><br><br>
+						
+						<input type="text" name="cidade" id="cidade" size="40" maxlength="15" placeholder="Cidade"><br><br>
+						
+						<input type="text" name="estado" id="estado" size="40" maxlength="15" placeholder="Estado"><br><br>
+						
+						<input type="text" name="telefone" id="telefone" size="40" maxlength="15" placeholder="Telefone"><br><br>
+
+						<input type="email" name="email" id="email" size="40" maxlength="30" placeholder="E-mail"><br><br>	
+ 
+                        <input type="password" name="senha" id="senha" size="40" maxlength="40" placeholder="Senha"><br><br>  
+	
+                        <input type="submit" value="Enviar" id="enviar" name="Confirmar"/>
+
+                    </fieldset>
+                    <p>Já e cadastrado? <br> <a href="cadastrado.html">Entrar na Conta</a></p>
+                </form>
+            
             </main>
 
         </div>
