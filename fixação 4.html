@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        
+        <head>
+            <meta charset="utf-8">
+            <title>Fixação 4 </title>
+
+            <style>
+                body {
+                    background-color:aqua;
+                }
+                #cor{
+                    padding: 10px;
+                    border-radius: 20px;
+                    background-color: rgb(180, 119, 236);
+                }
+            </style>
+        </head>
+            
+        <body>
+
+            <p id="escritora">Jane Austen</p>
+            <input type="button" value="mudar" id="cor">
+
+            <script>
+                document.querySelector("#cor").addEventListener
+                ("click",corFundo)
+                function corFundo() {
+                    document.querySelector("#escritora").style.backgroundColor = "pink"
+                }
+                document.querySelector("#cor").addEventListener ("click",tamLetra)
+                function tamLetra() {
+                    document.querySelector("#escritora").style.fontSize = "25px"
+                    
+                }
+                document.querySelector("#cor").addEventListener ("click",textPos)
+                function textPos() {
+                    document.querySelector("#escritora").style.textAlign = "center"
+                    
+                }
+            </script>
+        </body>
+    
+    </html>

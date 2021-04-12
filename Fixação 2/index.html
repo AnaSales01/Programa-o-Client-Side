@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        
+        <head>
+            <meta charset="utf-8">
+            <title>Sandy e Júnior </title>
+
+            <style>
+                body{
+                    background-color: powderblue;
+                }
+                h1{
+                    text-align: center;
+                    color: palevioletred;
+                }
+                img{
+                    padding: 10px 50px;
+                }
+                #summer, #spring, #autumn, #winter{
+                    margin: 0px 50px;
+                    padding-bottom: 50px;
+                }
+            </style>
+
+        </head>
+            
+        <body>
+            
+            <h1>As Quatro Estações</h1>
+            
+            <div>
+               
+                <img id="estacao" src="winter.jpg" alt="Estações do Ano" width="640" height="392" onmouseover="inverno()" onmouseout="sair()"/>
+                <div id="winter"></div>
+            
+            </div>
+
+            <div>
+               
+                <img id="estacao2" src="spring.jpg" alt="Estações do Ano" width="640" height="392" onmouseover="primavera()" onmouseout="sair2()"/> 
+                <div id="spring"></div>
+           
+            </div>
+
+            <div>
+
+                <img id="estacao3" src="summer.jpg" alt="Estações do Ano" width="640" height="392" onmouseover="verao()" onmouseout="sair3()"/>
+                <div id="summer"></div>
+            
+            </div>
+
+
+            <div>
+
+                <img id="estacao4" src="autumn.jpg" alt="Estação do Ano" width="640" height="392" onmouseover="outono()" onmouseout="sair4()"/>
+                <div id="autumn"></div>
+            
+            </div>
+
+                <script>
+                    
+                    let mensagem = ``
+                    
+                    let mensagem1 = `A noite cai, o frio desce.
+                                    Mas aqui dentro predomina
+                                    esse amor que me aquece.
+                                    Protege da solidão!` 
+                   
+                    let mensagem2 = `Na primavera, calmaria.
+                                    Tranquilidade, uma quimera.
+                                    Queria sempre essa alegria,
+                                    viver sonhando, quem me dera!`
+                    
+                    let mensagem3 = `Passa o inverno, chega o verão.
+                                    O calor aquece minha emoção,
+                                    não pelo clima da estação,
+                                    mas pelo fogo dessa paixão!`
+                    
+                    let mensagem4 = `No outono é sempre igual.
+                                    As folhas caem no quintal,
+                                    só não cai o meu amor,
+                                    pois não tem jeito, é imortal!`
+
+                    function inverno() {
+                        document.querySelector("#winter").innerHTML = mensagem1
+                    }
+                    
+                    function sair() {
+                        document.querySelector("#winter").innerHTML = mensagem
+                    }
+
+                    function primavera(){
+                        document.querySelector("#spring").innerHTML = mensagem2
+                    }
+
+                    function sair2(){
+                        document.querySelector("#spring").innerHTML = mensagem
+                    }
+
+                    function verao(){
+                        document.querySelector("#summer").innerHTML = mensagem3
+                    }
+                    
+                    function sair3(){
+                        document.querySelector("#summer").innerHTML = mensagem
+                    }
+
+                    function outono(){
+                        document.querySelector("#autumn").innerHTML = mensagem4
+                    }
+
+                    function sair4(){
+                        document.querySelector("#autumn").innerHTML = mensagem
+                    }
+
+                </script>
+
+            </body>
+    
+    </html>

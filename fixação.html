@@ -1,0 +1,46 @@
+<!Doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewspot" content="width=device-width, initial-scale=1.0">
+        <title>Exercício de Fixação</title>
+        <style>
+            body{
+                background-color: teal;
+            }
+            h1{
+                font-size: 20px;
+                color:yellow;
+                text-align: center;
+            }
+            button{
+                width:120px;
+                height:30px;
+                border-radius: 20px;
+                border-color: wheat;
+                background-color: violet;
+                color: white;
+                padding:0 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="titulo">Damas Vintages</h1>
+        <button id="tamanho" onclick="tam()">TAMANHO</button>
+        <button id="texto" onclick="tex()">TEXTO</button>
+        <button id="fundo" onclick="fund()">FUNDO</button>
+
+        <script>
+            function tam() {
+                document.querySelector("#titulo").style.fontSize = "30px"
+            } 
+            function tex(){
+                document.querySelector("#titulo").style.color = "pink"
+            }
+            function fund(){
+                document.querySelector("body").style.backgroundColor = "aqua"
+            }
+        </script>
+
+    </body>
+</html>

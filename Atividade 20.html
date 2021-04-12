@@ -1,0 +1,65 @@
+<!Doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewspot" content="width=device-width, initial-scale=1.0">
+        <title>Exercício de Fixação</title>
+        <style>
+            body{
+                background-color:pink;
+            }
+            h1{
+                font-size: 20px;
+                text-align: center;
+            }
+            button{
+                width:120px;
+                height:30px;
+                border-radius: 20px;
+                border-color: wheat;
+                background-color: violet;
+                color: white;
+                padding:0 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="titulo">Estou com dor! Me ajuda?</h1>
+        <input type="range" name="socorro"  id="help" min="0" max="10" step="0">
+        <button id="ajuda" onclick="help()">Me ajuda!</button>
+        
+        <div id="resultado">
+
+        </div>
+
+        <script>
+            
+            function help() {
+                let meajuda = parseInt(document.querySelector("#help").value);
+                let mensagem;
+                if (meajuda == 0){
+                    mensagem = `Eu estou bem!`
+                }
+                else if(meajuda >= 1 && meajuda <= 3){
+                  document.querySelector("body").style.backgroundColor = "yellow";
+                  mensagem = `Chame o técnico de infermagem!`
+                }
+                else if (meajuda >=4 && meajuda <=8){
+                    mensagem = `Chame a enfermeira! `
+                    document.querySelector("body").style.backgroundColor = "red";
+                    document.querySelector("#titulo").style.color = "white";
+                    document.querySelector("#resultado").style.color = "white";
+                }
+                else if(meajuda >=9 && meajuda <=10){
+                    mensagem = `CHAME O MÉDICO!!!`
+                    document.querySelector("body").style.backgroundColor = "black";
+                    document.querySelector("#titulo").style.color = "white";
+                    document.querySelector("#resultado").style.color = "white";
+                }
+                document.querySelector("#resultado").innerHTML = mensagem;
+            }
+        
+        </script>
+
+    </body>
+</html>

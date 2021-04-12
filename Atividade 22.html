@@ -1,0 +1,52 @@
+<!Doctype html>
+    <html lang="pt-br">
+        
+        <head>
+            <meta charset="utf-8">
+            <title>Atividade de Fixação</title>
+            <style>
+                h1{
+                    text-align: center;
+                }
+                form{
+                    text-align: center;
+                }
+            </style>
+        </head>
+
+        <body>
+            <h1>Cadastro</h1>
+            <form action="cadastro.php">
+                <fieldset>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="Nome" required autofocus maxlength="5" id="nome"><br><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="E-mail" autocomplete="on" placeholder="seuemail@email.com" required id="email"><br><br>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone"><br><br><br>                                     
+                    <input type="submit" name="btr-enviar" value="Enviar" onclick="return validaFormulario()">
+			    </fieldset>
+		    </form>
+            
+            <div id="valor"></div>
+            
+            <script>
+                
+                function validaFormulario() {
+                    
+                    if (!valor.checkValidity()){
+                    document.querySelector("#nome").value;
+                    }
+                    if(!valor.checkValidity()){
+                    document.querySelector("#email").value;
+                    }
+                    if(!valor.checkValidity()){
+                    document.querySelector("#telefone").value;
+                    }
+                }
+                
+            </script>
+        
+        </body>
+    
+    </html>
