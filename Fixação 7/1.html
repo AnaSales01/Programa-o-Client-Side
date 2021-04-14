@@ -1,0 +1,44 @@
+<!doctype html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="utf-8">
+            <title>Fixação 7</title>
+            <style>
+                h1,h2{
+                    text-align: center;
+                }
+                .fundo{
+                    background-color: palevioletred;
+                    color:aqua;
+                }
+            </style>
+        </head>
+
+        <body>
+            
+            <h1>Livros</h1>
+            
+            <h2>Orgulho e Preconceito</h2>
+            <h2>Romeu e Julieta</h2>
+            <h2>Um amor para recordar</h2>
+            <h2>Crepúsculo</h2>
+            
+            <script>
+                
+                let livros = document.querySelector("h1")
+                
+                livros.addEventListener("mouseover", mudaFundo =>{
+                    
+                    let nomes = document.querySelectorAll("h2")
+                    
+                    for (i in nomes){
+                        nomes[i].classList.add("fundo")
+                    } 
+                })
+                
+            
+            </script>
+        
+        </body>
+    
+    </html>
