@@ -1,0 +1,143 @@
+<!Doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="AnaSilva">
+        <title>Girassol Cosmetic</title>
+
+        <style>
+            body{
+                background-color:#FDFFB6;
+            }
+            h1{
+                text-align: center;
+                color:#CD1787;
+            }
+            h2{
+                text-align: center;
+            }
+            img{
+                width: 300PX;
+                height: 250px;
+                border-radius: 10px;
+                margin: 20px;
+            }
+            a{
+                text-decoration: none;
+            }
+            button{
+                text-align: center;
+                margin: 0 38%;
+                width: 150px;
+                height: 35px;
+            }
+            #produtos{
+				text-align:center;
+                display: flex;
+                margin: 0 12%;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Produtos</h1>
+        <div id="produtos"></div>
+         
+        <h1>Carrinho</h1>
+        <div id="carrinhos"></div>
+        
+    <script>
+
+        let itens = [ 
+            {
+                id: 0, 
+                nome: "Creme de Camomila",
+                img: "./img/1.jpg",
+                valor: 25,
+                quantidade: 0
+            }, 
+            {
+                id: 1,
+                nome: "Creme de Aloe e Vera",
+                img: "./img/2.jpg",
+                valor: 35,
+                quantidade: 0,
+            },
+            {
+                id: 2, 
+                nome: "Creme de Rosas",
+                img: "./img/3.jpg",
+                valor: 20,
+                quantidade: 0
+            }
+        ];
+
+        function carregarLoja() {
+                let loja = document.querySelector("#produtos")
+                
+                itens.forEach((i) => {
+                  loja.innerHTML += `
+                  
+                    <div>
+                        <img src="${i.img}">
+                        <h2>${i.nome}</h2>
+                        <h3>R$ ${i.valor},00</h3>
+                        <button><a class="adiciona" key="${i.id}" href="#">Comprar</a></button>
+                    </div>
+                  `;
+                })                
+
+            }
+            carregarLoja();
+
+            carregarCarrinho = () => {
+                let itensLoja = document.querySelector("#carrinhos");
+                let subTotal = 0;
+                let total = 0;
+
+                itensLoja.innerHTML = "";
+
+                itens.forEach((i) => {
+                    if(i.quantidade > 0) {
+                        subTotal = i.valor * i.quantidade;
+                        total += subTotal;
+
+                        itensLoja.innerHTML += `
+                            <div>
+                                <h3>  ${i.nome} 
+                                    | Preço: R$ ${i.valor} 
+                                    |Quantidade: ${i.quantidade} 
+                                    | Sub-total R$ ${subTotal.toFixed(2)}</h3>
+                                <hr>
+                            </div>                    
+                        `;
+                    }
+                })
+
+                itensLoja.innerHTML += `
+                <div>
+                    <h3>Total da compra: R$ ${total.toFixed(2)}</h3>
+                </div>                
+                `;
+            }
+
+            let carrinho = document.querySelectorAll(".adiciona");
+
+            for (i in itens) {
+                carrinho[i].addEventListener('click', function() {
+                    let key = this.getAttribute('key');
+                    itens[key].quantidade++;                    
+                    carregarCarrinho();
+                })
+            }
+    </script>
+
+    </body>
+
+</html>

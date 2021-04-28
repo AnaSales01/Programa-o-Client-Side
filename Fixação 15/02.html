@@ -1,0 +1,63 @@
+<!Doctype html>
+
+	<html lang="pt-br">
+	
+		<head>
+		
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="keywords" content="girassol cosmetic, produtos de beleza veganos, cremes para pele, girassol, cosmético, pele">
+			<meta name="description" content="A Empresa Girassol Cosmetic vende produtos para pele veganos e a nossa missão é Cuidar da sua Beleza!">
+			<meta name="author" content="Ana Silva">
+			<title>Girassol Cosmetic</title>
+		
+		</head>
+		
+		<body>
+		
+			<form>
+
+                <label for="txtNome">Nome:</label>
+                <input type="text" name="txtNome" id="txtNome"><br><br>
+
+                <label for="txtMarca">Marca:</label>
+                <input type="text" name="txtMarca" id="txtMarca"><br><br>
+
+                <label for="txtValor">Valor:</label>
+                <input type="number" name="txtValor" id="txtValor"><br><br>
+
+                <input id="botao" type="button" value="Clicar">
+
+            </form>
+			
+            <div id="geral"></div>
+
+			<script>
+
+                let bot = document.getElementById("botao");
+
+                botao.addEventListener('click',() => {
+                    let fNome = document.querySelector("#txtNome").value;
+                    let fMarca = document.querySelector("#txtMarca").value;
+
+                    let exibir = document.querySelector("#geral")
+
+                    let creme = []
+                    creme.push({
+                        nome: fNome,
+                        marca: fMarca
+                    })
+
+                    creme.forEach(item => {
+                        exibir.innerHTML += `
+                            ${item.nome} <br>
+                        `;
+                    })
+                })
+			
+			</script>
+			
+		</body>
+	
+	</html>

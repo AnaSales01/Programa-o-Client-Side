@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <style>
+        img {width: 300px}
+        #produtos{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h2>Produtos:</h2>
+    <div id="produtos"></div>
+
+    <h2>Carrinhos:</h2>
+    <div id="carrinhos"></div>
+
+    <script>
+        // 1ª ETAPA
+        // Array do tipo objeto = Produtos;
+        let itens = [ 
+            {
+                id: 0, 
+                nome: "TV",
+                img: "./img/1.jpg",
+                quantidade: 0 
+            }, 
+            {
+                id: 1,
+                nome: "DVD",
+                img: "./img/2.jpg",
+                quantidade: 0
+            },
+            {
+                id: 2, 
+                nome: "VHS",
+                img: "./img/3.jpg",
+                quantidade: 0
+            }
+        ];
+
+            // 2ª ETAPA
+            //Carregar Produtos dinamicamente
+            function carregarLoja() {
+                let loja = document.querySelector("#produtos")
+                
+                itens.forEach((i) => {
+                  loja.innerHTML += `
+                  
+                    <div>
+                        <img src="${i.img}">
+                        <p>${i.nome}</p>
+                        <a class="adiciona" key="${i.id}" href="#">Adicionar ao carrinho</a>
+                    </div>
+                  `;
+                })                
+
+            }
+            carregarLoja();
+
+            // 3ª ETAPA
+            // Carregar o carrinho com os itens selecionados
+            carregarCarrinho = () => {
+                let itensLoja = document.querySelector("#carrinhos");
+                itensLoja.innerHTML = "";
+
+                itens.forEach((i) => {
+
+                    if(i.quantidade > 0) {
+
+                        itensLoja.innerHTML += `
+                            <div>
+                                <p>${i.nome} | Quantidade: ${i.quantidade}</p>
+                                <hr>
+                            </div>                    
+                        `;
+                    }
+                })
+            }
+
+            // 4ª ETAPA 
+            // Atualizar quantidade
+            let carrinho = document.querySelectorAll(".adiciona");
+
+            for (i = 0; i < itens.length; i++) {
+                carrinho[i].addEventListener('click', function() {
+                    let key = this.getAttribute('key');
+                    itens[key].quantidade++;
+                    
+                    carregarCarrinho();
+                })
+            }
+
+
+    </script>
+</body>
+</html>

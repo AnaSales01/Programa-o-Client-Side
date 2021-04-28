@@ -1,0 +1,67 @@
+<!Doctype html>
+
+	<html lang="pt-br">
+	
+		<head>
+		
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="keywords" content="girassol cosmetic, produtos de beleza veganos, cremes para pele, girassol, cosmético, pele">
+			<meta name="description" content="A Empresa Girassol Cosmetic vende produtos para pele veganos e a nossa missão é Cuidar da sua Beleza!">
+			<meta name="author" content="Ana Silva">
+			<title>Girassol Cosmetic</title>
+		
+		</head>
+		
+		<body>
+		
+			<div id="geral"></div>
+			
+			<script>
+			
+				let creme = [
+					{
+						nome: "Aloe e Vera",
+						tipo: "creme para pele",
+						marca: "Dior",
+						valor: "R$ 25,00"
+					},
+					{
+						nome: "Rosas",
+						tipo: "creme para os pés",
+						marca: "Chanel",
+						valor: "R$ 50,00"
+					},
+					{
+						nome: "Girassol",
+						tipo: "creme para rosto",
+						marca: "Avon",
+						valor: "R$ 35,00"
+					},
+					{
+						nome: "Malaleuca",
+						tipo: "creme para mãos",
+						marca: "Nivia",
+						valor: "R$ 15,00"
+					},
+					{
+						nome: "Uva",
+						tipo: "creme para pele",
+						marca: "Loreal",
+						valor: "R$ 45,00"
+					}
+				];
+				
+				let mostrar = document.getElementById("geral")
+				creme.forEach(item => {
+					mostrar.innerHTML += `
+						${item.nome} <br>
+					`;
+				})
+			
+			</script>
+			
+		</body>
+	
+	</html>

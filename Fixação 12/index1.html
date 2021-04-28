@@ -1,0 +1,73 @@
+<!Doctype html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="AnaSilva">
+        <title>Girassol Cosmetic</title>
+
+        <style>
+            body{
+                background-color:#FDFFB6;
+            }
+            h1{
+                text-align: center;
+                color:#CD1787;
+            }
+            img{
+                width: 300PX;
+                height: 250px;
+                border-radius: 10px;
+            }
+            a{
+                text-decoration: none;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Produtos</h1>
+        <div id="produtos"></div>
+        <div>
+            <img src="img/1.jpg" alt="Creme de Pele">
+            <h2>Creme de Camomila</h2>
+            <button><a class="add" key="" href="#">Comprar</a></button>
+        </div>
+
+        <script>
+            let itens = [
+                {
+                    id: 0,
+                    nome:"Creme de Camomila",
+                    img:"img/1.jpg",
+                    quantidade:0,
+                },
+                {
+                    id: 1,
+                    nome:"Creme de Aloe Vera",
+                    img:"img/2.jpg",
+                    quantidade:0,
+                },
+                {
+                    id: 2,
+                    nome:"Creme de Rosas",
+                    img:"img/3.jpg",
+                    quantidade:0,
+                }
+            ];
+
+            function carregarLoja(){
+                console.log(itens[0].nome)
+            }
+
+            carregarLoja();
+
+        </script>
+    </body>
+
+</html>
